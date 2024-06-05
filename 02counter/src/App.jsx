@@ -7,7 +7,12 @@ function App() {
     setCounter(counter + 1)
   }
   const removeValue = () => {
-    setCounter(counter - 1)
+    if(counter >= 0){
+      setCounter(0)
+    }else{
+      setCounter(counter - 1)
+
+    }
   }
   return (
     <>
